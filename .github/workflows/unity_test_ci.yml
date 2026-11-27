@@ -3,9 +3,9 @@ run-name: Unity EditMode Tests
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 env:
   UNITY_EDITOR_VERSION: "6000.6.7f1"
