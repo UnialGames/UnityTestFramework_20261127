@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Unity CLI (Windows)
-        shell: pwsh
+        shell: powershell
         run: |
           if (-not (Get-Command unity -ErrorAction SilentlyContinue)) {
             irm https://unity3d.com | iex
@@ -32,7 +32,7 @@ jobs:
           unity --version
           
       - name: Run EditMode Tests
-        shell: pwsh
+        shell: powershell
         run: |
           unity test "$env:GITHUB_WORKSPACE" `
             --editor-version "$env:UNITY_EDITOR_VERSION" `
