@@ -16,7 +16,7 @@ env:
 
 jobs:
   editmode-tests:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 60
 
     steps:
