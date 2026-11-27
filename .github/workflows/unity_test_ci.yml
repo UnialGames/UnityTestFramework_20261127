@@ -1,0 +1,56 @@
+name: Unity EditMode Tests
+run-name: Unity EditMode Tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+env:
+  UNITY_EDITOR_VERSION: "6000.6.7f1"
+  UNITY_NON_INTERACTIVE: "1"
+  UNITY_NO_CONSENT_PROMPT: "1"
+  UNITY_NO_CRASH_REPORT: "1"
+  UNITY_NO_UPDATE_CHECK: "1"
+
+jobs:
+  editmode-tests:
+    runs-on: self-hosted
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Unity CLI (Windows)
+        shell: pwsh
+        run: |
+          if (-not (Get-Command unity -ErrorAction SilentlyContinue)) {
+            irm https://unity3d.com | iex
+          }
+          unity --version
+          
+      - name: Run EditMode Tests
+        shell: pwsh
+        run: |
+          unity test "$env:GITHUB_WORKSPACE" `
+            --editor-version "$env:UNITY_EDITOR_VERSION" `
+            --mode EditMode `
+            --output "$env:GITHUB_WORKSPACE\test-results.xml" `
+            --report-format nunit,junit `
+            --timeout 600 `
+            --format github `
+            -- `
+            -nographics
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: editmode-test-results
+          path: |
+            test-results.xml
+            test-results.junit.xml
+            Logs/**
+          if-no-files-found: warn
