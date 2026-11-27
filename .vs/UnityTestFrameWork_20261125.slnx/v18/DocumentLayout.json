@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\UnityTestFrameWork_20261125\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2129A3AB-DC3C-F26A-5D24-037F9D5937E6}|Tests.csproj|d:\\github\\unitytestframework_20261125\\assets\\tests\\smoketests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2129A3AB-DC3C-F26A-5D24-037F9D5937E6}|Tests.csproj|solutionrelative:assets\\tests\\smoketests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\github\\unitytestframework_20261125\\assets\\scripts\\newmonobehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newmonobehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewMonoBehaviourScript.cs",
+              "DocumentMoniker": "D:\\Github\\UnityTestFrameWork_20261125\\Assets\\Scripts\\NewMonoBehaviourScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NewMonoBehaviourScript.cs",
+              "ToolTip": "D:\\Github\\UnityTestFrameWork_20261125\\Assets\\Scripts\\NewMonoBehaviourScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NewMonoBehaviourScript.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T12:24:35.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmokeTests.cs",
+              "DocumentMoniker": "D:\\Github\\UnityTestFrameWork_20261125\\Assets\\Tests\\SmokeTests.cs",
+              "RelativeDocumentMoniker": "Assets\\Tests\\SmokeTests.cs",
+              "ToolTip": "D:\\Github\\UnityTestFrameWork_20261125\\Assets\\Tests\\SmokeTests.cs",
+              "RelativeToolTip": "Assets\\Tests\\SmokeTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T11:48:11.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
